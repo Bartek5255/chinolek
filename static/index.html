@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        class Main {
+            loguj() {
+                var nazwaGracza = document.getElementById("nazwa")
+                console.log(nazwaGracza);
+                fetch(
+                    `http://localhost:3000/loged?name=${nazwaGracza.value}`
+                ).then(() => {
+                    window.location = "/gra.html"
+                });
+            }
+
+        }
+        let main = new Main();
+
+    </script>
+    <div class="main">
+        <input type="text" name="nazwa" id="nazwa" />
+        <button type="submit" onclick="main.loguj()">wyslij</button>
+    </div>
+</body>
+
+</html>

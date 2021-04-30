@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        class gra {
+            daneGry = {
+
+            }
+
+            zapytajkaPoj() {
+                var params = {
+                    credentials: "include"
+                };
+                fetch(`http://localhost:3000/gra`, params).then(response => {
+                    response.json().then(data => {
+                        this.daneGry = data;
+                        console.log(data);
+                    });
+                });
+            }
+            zapytajkaConst() {
+                this.cyklicznosc = setInterval(this.zapytajkaPoj, 1000);
+            }
+
+            constructor() {
+                this.zapytajkaConst();
+            }
+        }
+        var Gra = new gra()
+
+    </script>
+    <div class="main">
+        <div id="gracze">
+            <div id="niebieski"></div>
+            <div id="zielony"></div>
+            <div id="czerwony"></div>
+            <div id="zolty"></div>
+            <div id="ready">
+                <input type="checkbox" name="czeck" id="czeck" />
+                <p v-if="czeck==checked">chce juz grac</p>
+                <p v-if="czeck!=checked">czekam na ludzi</p>
+            </div>
+        </div>
+        <div id="plansza"></div>
+    </div>
+</body>
+
+</html>

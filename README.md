@@ -1,0 +1,2 @@
+# chinczyk_oby_dzialal
+ plzzzzzzzzzzzzzzzzzzzzzz
