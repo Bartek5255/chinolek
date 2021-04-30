@@ -1,0 +1,25 @@
+{
+  "name": "lekcja_9",
+  "version": "1.0.0",
+  "description": "plzzzzzzzzzzzzzzzzzzzzzz",
+  "main": "server1.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "node-session": "^1.2.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bartek5255/chinolek.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Bartek5255/chinolek/issues"
+  },
+  "homepage": "https://github.com/Bartek5255/chinolek#readme"
+}
