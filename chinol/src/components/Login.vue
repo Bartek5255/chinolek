@@ -21,7 +21,7 @@ export default {
       console.log(this.nazwaGracza);
 
       axios
-        .get(`http://localhost:3000/loged?name=${this.nazwaGracza}`, null, {
+        .get(`/loged?name=${this.nazwaGracza}`, null, {
           useCredentials: true
         })
         .then(() => {

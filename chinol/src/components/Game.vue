@@ -66,7 +66,7 @@ export default {
   methods: {
     zapytajkaPoj: function() {
       axios
-        .get(`http://localhost:3000/gra`, null, {
+        .get(`/gra`, null, {
           useCredentials: true
         })
         .then(response => {
@@ -85,7 +85,7 @@ export default {
     },
 
     checkcheck: function() {
-      axios.post(`http://localhost:3000/gotowy`, null, {
+      axios.post(`/gotowy`, null, {
         useCredentials: true
       });
     },
@@ -94,7 +94,7 @@ export default {
     },
     rzut: function() {
       axios
-        .get(`http://localhost:3000/rzut`, null, {
+        .get(`/rzut`, null, {
           useCredentials: true
         })
         .then(response => {
@@ -105,7 +105,7 @@ export default {
         });
     },
     tura: function() {
-      axios.post(`http://localhost:3000/nextTura`, null, {
+      axios.post(`/nextTura`, null, {
         useCredentials: true
       });
     }
